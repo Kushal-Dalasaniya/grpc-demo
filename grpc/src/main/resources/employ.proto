@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.demo.grpc";
+option java_multiple_files = true;
+
+service employ{
+	rpc getName(id) returns (name);
+}
+
+message id {
+	int32 id=1;
+}
+
+message name {
+	string name=2;
+}
